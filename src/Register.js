@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from './api/axios';
 import { Link } from 'react-router-dom';
 
-const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
+//const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const MOBILE_REGEX = /^[0-9]{11,12}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -18,10 +18,10 @@ const Register = () => {
     const errRef = useRef();
 
     const [fname, setFname] = useState('');
-    const [fnameFocus, setFnameFocus] = useState(false);
+    const [setFnameFocus] = useState(false);
 
     const [lname, setLname] = useState('');
-    const [lnameFocus, setLnameFocus] = useState(false);
+    const [setLnameFocus] = useState(false);
 
     const [mobile, setMobile] = useState('');
     const [validMobile, setValidMobile] = useState(false);
